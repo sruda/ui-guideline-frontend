@@ -10,7 +10,7 @@ type Props = {
   items: User[];
 };
 
-const WithStaticProps: React.FC<Props> = ({ items }) => (
+const WithStaticProps: React.SFC<Props> = ({ items }) => (
   <Layout title="Users List | Next.js + TypeScript Example">
     <h1>Users List</h1>
     <p>
