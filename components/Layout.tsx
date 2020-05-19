@@ -1,23 +1,21 @@
-import * as React from 'react'
+import Head from 'next/head';
+import Link from 'next/link';
+import * as React from 'react';
 
 import Button, { Use as ButtonUse } from '../components/atoms/Button/Button';
-import Link from 'next/link'
-import Head from 'next/head'
 
 type Props = {
-  title?: string
-}
+  title?: string;
+};
 
-const Layout: React.FunctionComponent<Props> = ({
-  children,
-  title = 'This is the default title',
-}) => (
+const Layout: React.FunctionComponent<Props> = ({ children, title = 'This is the default title' }) => (
   <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
+
     <header>
       <nav>
         <Link href="/">
@@ -37,10 +35,12 @@ const Layout: React.FunctionComponent<Props> = ({
     {children}
     <footer>
       <hr />
-      <Button use={ButtonUse.primary}>TEST</Button>
-      <span>I'm here to stay (Footer)</span>
+      <Button className="mx-10" use={ButtonUse.primary}>
+        TEST
+      </Button>
+      <span>I am here to stay (Footer)</span>
     </footer>
   </div>
-)
+);
 
-export default Layout
+export default Layout;

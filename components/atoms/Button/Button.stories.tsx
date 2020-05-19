@@ -1,10 +1,10 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import 'theme/base/index.scss';
+
 import { boolean, optionsKnob as options, text, withKnobs } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import React from 'react';
 
 import Button, { Size, Use } from './Button';
-
-import 'theme/base/index.scss';
 
 storiesOf('Atoms|Button', module)
   .addDecorator(withKnobs)

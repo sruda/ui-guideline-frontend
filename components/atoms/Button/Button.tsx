@@ -1,8 +1,7 @@
+import cn from 'classnames';
 import React from 'react';
 
-import * as classNames from 'classnames';
-
-import './Button.module.scss';
+import styles from './Button.module.scss';
 
 export enum Use {
   primary = 'primary',
@@ -40,12 +39,10 @@ const Button: React.SFC<Props> = ({
   onClick,
   children,
 }) => {
-  const btnClass = classNames({
-    'ug-btn': true,
-    [`ug-btn--${size}`]: true,
-    [`ug-btn--${use}`]: true,
-    'ug-btn--block': block,
-    [`${className}`]: !!className,
+  const btnClass = cn(className, styles['ug-btn'], {
+    [styles[`ug-btn--${size}`]]: true,
+    [styles[`ug-btn--${use}`]]: true,
+    [styles['ug-btn--block']]: block,
   });
 
   return (
