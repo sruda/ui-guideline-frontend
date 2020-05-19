@@ -2,7 +2,7 @@
   "name": "ui-guideline",
   "version": "1.0.0",
   "scripts": {
-    "build:style": "postcss theme/tailwind.scss -o theme/base/core/utilities.scss",
+    "build:style": "postcss src/theme/tailwind.scss -o src/theme/base/core/utilities.scss",
     "dev": "npm run build:style && next",
     "build": "npm run build:style && next build",
     "start": "next start",

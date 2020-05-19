@@ -1,8 +1,7 @@
+import Button, { Use as ButtonUse } from '@components/atoms/Button/Button';
 import Head from 'next/head';
 import Link from 'next/link';
 import * as React from 'react';
-
-import Button, { Use as ButtonUse } from '../components/atoms/Button/Button';
 
 type Props = {
   title?: string;

@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "alwaysStrict": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -14,6 +15,13 @@
     "noImplicitAny": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@pages/*": ["src/pages/*"],
+      "@theme/*": ["src/theme/*"],
+      "@utils/*": ["src/utils/*"]
+    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

@@ -1,6 +1,7 @@
+// Components
+import Layout from '@components/Layout';
+// Next
 import Link from 'next/link';
-
-import Layout from '../components/Layout';
 
 const IndexPage: React.SFC = () => (
   <Layout title="Home | Next.js + TypeScript Example">

@@ -1,4 +1,4 @@
-import '../theme/base/index.scss';
+import '@theme/base/index.scss';
 
 import { AppProps } from 'next/app';
 
