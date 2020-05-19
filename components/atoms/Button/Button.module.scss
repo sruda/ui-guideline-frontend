@@ -1,0 +1,78 @@
+.ug-btn {
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 0.5rem;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  transition: background 100ms ease-out;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-color: var(--black);
+    border: 2px solid var(--black);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--white);
+      border: 2px solid var(--black);
+      color: var(--black);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    color: var(--black);
+
+    &:hover {
+      background-color: var(--black);
+      border: 2px solid var(--black);
+      color: var(--white);
+    }
+  }
+
+  &--xs {
+    font-size: 0.875rem;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  &--sm {
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  &--md {
+    font-size: 1rem;
+    height: 3.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  &--lg {
+    font-size: 1.125rem;
+    height: 4rem;
+    padding: 1rem 2rem;
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

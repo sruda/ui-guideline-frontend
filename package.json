@@ -1,22 +1,80 @@
 {
-  "name": "with-typescript",
+  "name": "ui-guideline",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "build:style": "postcss theme/tailwind.scss -o theme/base/core/utilities.scss",
+    "dev": "npm run build:style && next",
+    "build": "npm run build:style && next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@sentry/browser": "5.15.5",
+    "@storybook/cli": "6.0.0-alpha.21",
+    "mixpanel-browser": "2.36.0",
     "next": "latest",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "sass": "^1.26.5",
+    "validator": "13.0.0"
   },
   "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
-    "typescript": "3.7.3"
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@storybook/addon-actions": "5.3.17",
+    "@storybook/addon-backgrounds": "5.3.17",
+    "@storybook/addon-knobs": "5.3.14",
+    "@storybook/addon-links": "5.3.14",
+    "@storybook/addons": "5.3.14",
+    "@storybook/react": "6.0.0-alpha.21",
+    "@types/node": "14.0.3",
+    "@types/react": "16.9.16",
+    "@types/react-dom": "16.9.4",
+    "@types/validator": "13.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "autoprefixer": "9.7.3",
+    "cssnano": "4.1.10",
+    "eslint": "7.0.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.19.0",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.8",
+    "postcss": "7.0.27",
+    "postcss-cli": "7.1.0",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0",
+    "prettier": "2.0.5",
+    "prettier-plugin-import-sort": "^0.0.4",
+    "storybook-addon-designs": "5.2.0",
+    "tailwindcss": "1.1.4",
+    "typescript": "3.9.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module",
+      "parser": "typescript"
+    }
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "license": "ISC"
 }

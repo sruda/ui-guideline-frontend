@@ -1,0 +1,42 @@
+/************************************************/
+/*            UI GUIDELINE COLOR SYSTEM         */
+/************************************************/
+/* prettier-ignore */
+
+:root {
+  --light-secondary:    #C7E8E7;
+  --default-secondary:  #33ADA9;
+  --dark-secondary:     #2A8E8B;
+
+  --white:              #FFFFFF;
+
+  --default-snow:       #F9FAFC;
+  --dark-snow:          #EFF2F7;
+  --extra-dark-snow:    #E5E9F2;
+
+  --default-smoke:      #E0E6ED;
+  --dark-smoke:         #D3DCE6;
+  --extra-dark-smoke:   #C0CCDA;
+
+  --light-slate:        #6D87A4;
+  --medium-slate:       #445B76;
+  --default-slate:      #33475B;
+
+  --black:              #000000;
+
+  --light-warning:      #FAEFD0;
+  --default-warning:    #E5A800;
+  --dark-warning:       #BC8A00;
+
+  --light-positive:     #E4F6EF;
+  --default-positive:   #4BC593;
+  --dark-positive:      #3EA279;
+
+  --light-negative:     #FDE8E6;
+  --default-negative:   #F95849;
+  --dark-negative:      #CC493C;
+
+  --light-info:         #DCEAFB;
+  --default-info:       #408FEC;
+  --dark-info:          #3576C2;
+}

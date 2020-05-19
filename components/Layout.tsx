@@ -1,4 +1,6 @@
 import * as React from 'react'
+
+import Button, { Use as ButtonUse } from '../components/atoms/Button/Button';
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -35,6 +37,7 @@ const Layout: React.FunctionComponent<Props> = ({
     {children}
     <footer>
       <hr />
+      <Button use={ButtonUse.primary}>TEST</Button>
       <span>I'm here to stay (Footer)</span>
     </footer>
   </div>
