@@ -1,0 +1,51 @@
+.ug-divider {
+  border-top-width: 1px;
+  border-top-style: solid;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+
+  &--default-smoke {
+    border-top-color: var(--default-smoke);
+  }
+
+  &--dark-smoke {
+    border-top-color: var(--dark-smoke);
+  }
+
+  &--extra-dark-smoke {
+    border-top-color: var(--extra-dark-smoke);
+  }
+
+  &--spacing-xs {
+    margin: 0.75rem 0;
+  }
+
+  &--spacing-sm {
+    margin: 1.25rem 0;
+  }
+
+  &--spacing-md {
+    margin: 2rem 0;
+  }
+
+  &--spacing-lg {
+    margin: 3rem 0;
+  }
+
+  &--spacing-xl {
+    margin: 4rem 0;
+  }
+
+  &--spacing-2xl {
+    margin: 5rem 0;
+  }
+
+  &--spacing-3xl {
+    margin: 6rem 0;
+  }
+
+  &--spacing-4xl {
+    margin: 8rem 0;
+  }
+}

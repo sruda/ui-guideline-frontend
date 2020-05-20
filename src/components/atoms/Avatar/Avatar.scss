@@ -1,0 +1,98 @@
+/// VARIABLES
+$avatar-size: (
+  2xs: 24px,
+  xs: 32px,
+  sm: 40px,
+  md: 64px,
+  lg: 80px,
+  xl: 96px,
+  2xl: 120px,
+);
+
+.ug-avatar {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
+  position: relative;
+  backface-visibility: hidden;
+  border-radius: 100% !important;
+
+  /// AVATAR_SIZE
+  &--2xs {
+    height: map-get($avatar-size, 2xs);
+    width: map-get($avatar-size, 2xs);
+
+    .image {
+      height: map-get($avatar-size, 2xs);
+      width: map-get($avatar-size, 2xs);
+    }
+  }
+
+  &--xs {
+    height: map-get($avatar-size, xs);
+    width: map-get($avatar-size, xs);
+
+    .image {
+      height: map-get($avatar-size, xs);
+      width: map-get($avatar-size, xs);
+    }
+  }
+
+  &--sm {
+    height: map-get($avatar-size, sm);
+    width: map-get($avatar-size, sm);
+
+    .image {
+      height: map-get($avatar-size, sm);
+      width: map-get($avatar-size, sm);
+    }
+  }
+
+  &--md {
+    height: map-get($avatar-size, md);
+    width: map-get($avatar-size, md);
+
+    .image {
+      height: map-get($avatar-size, md);
+      width: map-get($avatar-size, md);
+    }
+  }
+
+  &--lg {
+    height: map-get($avatar-size, lg);
+    width: map-get($avatar-size, lg);
+
+    .image {
+      height: map-get($avatar-size, lg);
+      width: map-get($avatar-size, lg);
+    }
+  }
+
+  &--xl {
+    height: map-get($avatar-size, xl);
+    width: map-get($avatar-size, xl);
+
+    .image {
+      height: map-get($avatar-size, xl);
+      width: map-get($avatar-size, xl);
+    }
+  }
+
+  &--2xl {
+    height: map-get($avatar-size, 2xl);
+    width: map-get($avatar-size, 2xl);
+
+    .image {
+      height: map-get($avatar-size, 2xl);
+      width: map-get($avatar-size, 2xl);
+    }
+  }
+
+  .image {
+    display: inline-block;
+    text-indent: -9999px;
+    vertical-align: middle;
+  }
+}

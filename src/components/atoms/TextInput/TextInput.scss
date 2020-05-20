@@ -1,0 +1,169 @@
+.ug-text-input-wrapper {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+
+  &--block {
+    width: 100%;
+  }
+
+  .icon {
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .trailing-icon {
+    right: 0;
+  }
+
+  // XS
+  &--xs.with-leading-icon {
+    .leading-icon {
+      margin: 0 0.75rem;
+    }
+
+    .ug-text-input {
+      padding-left: 42px;
+    }
+  }
+
+  &--xs.with-trailing-icon {
+    .trailing-icon {
+      margin: 0 0.75rem;
+    }
+
+    .ug-text-input {
+      padding-right: 42px;
+    }
+  }
+
+  // SM
+  &--sm.with-leading-icon {
+    .leading-icon {
+      margin: 0 0.8125rem;
+    }
+
+    .ug-text-input {
+      padding-left: 48px;
+    }
+  }
+
+  &--sm.with-trailing-icon {
+    .trailing-icon {
+      margin: 0 0.8125rem;
+    }
+
+    .ug-text-input {
+      padding-right: 48px;
+    }
+  }
+
+  // MD
+  &--md.with-leading-icon {
+    .leading-icon {
+      margin: 0 0.9375rem;
+    }
+
+    .ug-text-input {
+      padding-left: 56px;
+    }
+  }
+
+  &--md.with-trailing-icon {
+    .trailing-icon {
+      margin: 0 0.9375rem;
+    }
+
+    .ug-text-input {
+      padding-right: 56px;
+    }
+  }
+
+  // LG
+  &--lg.with-leading-icon {
+    .leading-icon {
+      margin: 0 1.0625rem;
+    }
+
+    .ug-text-input {
+      padding-left: 64px;
+    }
+  }
+
+  &--lg.with-trailing-icon {
+    .trailing-icon {
+      margin: 0 1.0625rem;
+    }
+
+    .ug-text-input {
+      padding-right: 64px;
+    }
+  }
+}
+
+.ug-text-input {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  border-radius: 2px;
+  color: var(--black);
+  display: block;
+  font-weight: 400;
+  line-height: 2.5rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  &::-moz-placeholder {
+    color: var(--light-slate);
+  }
+
+  &::-webkit-input-placeholder {
+    color: var(--light-slate);
+  }
+
+  &::placeholder {
+    color: var(--light-slate);
+  }
+
+  &:focus {
+    border-color: var(--default-secondary);
+    outline: 0;
+  }
+
+  &--xs {
+    font-size: 0.875rem;
+    height: 2.5rem;
+    padding: 0.625rem 1rem;
+  }
+
+  &--sm {
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0.75rem 1rem;
+  }
+
+  &--md {
+    font-size: 1.125rem;
+    height: 3.5rem;
+    padding: 0.75rem 1.125rem;
+  }
+
+  &--lg {
+    font-size: 1.25rem;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--is-invalid {
+    border-color: var(--default-negative);
+  }
+}
+
+/// DISABLED STATE
+
+.ug-text-input[disabled] {
+  background-color: var(--dark-snow);
+  pointer-events: none;
+}

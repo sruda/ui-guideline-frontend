@@ -1,0 +1,57 @@
+.ug-tag {
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  font-size: 0.75rem;
+  font-variant: tabular-nums;
+  font-weight: 700;
+  height: auto;
+  line-height: 1.375rem;
+  list-style: none;
+  margin: 0;
+  opacity: 1;
+  padding: 0 0.5rem;
+  -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  white-space: nowrap;
+
+  &--default {
+    background-color: var(--dark-snow);
+    color: var(--default-slate);
+  }
+
+  &--primary {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  &--secondary {
+    background-color: var(--light-secondary);
+    color: var(--dark-secondary);
+  }
+
+  &--positive {
+    background-color: var(--light-positive);
+    color: var(--dark-positive);
+  }
+
+  &--warning {
+    background-color: var(--light-warning);
+    color: var(--dark-warning);
+  }
+
+  &--negative {
+    background-color: var(--light-negative);
+    color: var(--dark-negative);
+  }
+
+  &--info {
+    background-color: var(--light-info);
+    color: var(--dark-info);
+  }
+}

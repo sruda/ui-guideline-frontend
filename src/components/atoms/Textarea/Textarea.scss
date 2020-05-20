@@ -1,0 +1,78 @@
+.ug-textarea {
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  border-radius: 2px;
+  color: var(--black);
+  display: block;
+  font-weight: 400;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  &::-moz-placeholder {
+    color: var(--light-slate);
+  }
+
+  &::-webkit-input-placeholder {
+    color: var(--light-slate);
+  }
+
+  &::placeholder {
+    color: var(--light-slate);
+  }
+
+  &:focus {
+    border-color: var(--default-secondary);
+    outline: 0;
+  }
+
+  &--xs {
+    font-size: 0.875rem;
+    height: 5.5rem;
+    line-height: 1.35rem;
+    padding: 0.6rem 1rem;
+  }
+
+  &--sm {
+    font-size: 1rem;
+    height: 6.5rem;
+    line-height: 1.5rem;
+    padding: 0.6rem 1rem;
+  }
+
+  &--md {
+    font-size: 1.125rem;
+    height: 8rem;
+    line-height: 1.75rem;
+    padding: 0.6rem 1.125rem;
+  }
+
+  &--lg {
+    font-size: 1.25rem;
+    height: 10rem;
+    line-height: 1.75rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  &--block {
+    width: 100% !important;
+  }
+
+  &--is-invalid {
+    border-color: var(--default-negative);
+  }
+
+  &--resize-both {
+    resize: both;
+  }
+
+  &--resize-horizontal {
+    resize: horizontal;
+  }
+
+  &--resize-vertical {
+    resize: vertical;
+  }
+
+  &--resize-none {
+    resize: none;
+  }
+}

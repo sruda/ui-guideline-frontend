@@ -21,14 +21,14 @@ export enum Type {
   submit = 'submit',
 }
 
-export interface Props {
+export type Props = {
   readonly size?: Size;
   readonly use?: Use;
   readonly block?: boolean;
   readonly type?: Type;
   readonly className?: string;
   readonly onClick?: (event: React.FormEvent<{}>) => any;
-}
+};
 
 const Button: React.SFC<Props> = ({
   size = Size.xs,

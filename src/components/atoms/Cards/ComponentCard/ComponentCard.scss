@@ -1,0 +1,45 @@
+.ug-component-card {
+  cursor: pointer;
+
+  .lazy-wrapper {
+    background-color: var(--default-snow);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 54px;
+    border: 1px solid var(--default-smoke);
+    height: 0;
+    overflow: hidden;
+    padding-top: 69%;
+    position: relative;
+
+    &__img {
+      bottom: 0;
+      height: auto;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: opacity 0.5s;
+      width: 100%;
+
+      &--hidden {
+        opacity: 0;
+      }
+
+      &--visible {
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &__no-img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

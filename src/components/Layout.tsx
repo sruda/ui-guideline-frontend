@@ -1,7 +1,12 @@
-import Button, { Use as ButtonUse } from '@components/atoms/Button/Button';
+// React
+import * as React from 'react';
+
+// NextJs
 import Head from 'next/head';
 import Link from 'next/link';
-import * as React from 'react';
+
+// Atoms
+import Button, { Use as ButtonUse } from '@components/atoms/Button/Button';
 
 type Props = {
   title?: string;

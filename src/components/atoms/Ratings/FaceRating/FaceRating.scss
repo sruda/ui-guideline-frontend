@@ -1,0 +1,35 @@
+.ug-face-rating {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  .rating-popover {
+    background-color: var(--default-snow);
+    min-width: 18.75rem;
+    padding: 1rem;
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+  }
+
+  .icon-container {
+    margin-right: 0.4rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    color: var(--extra-dark-smoke);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--light-slate);
+    }
+
+    &.active {
+      color: var(--default-slate);
+    }
+  }
+}

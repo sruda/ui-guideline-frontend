@@ -4,6 +4,7 @@ import { User } from '@interfaces/user';
 import { sampleUserData } from '@utils/sample-data';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
+import Tag, { Use as TagUse } from '@atoms/Tag/Tag';
 
 type Props = {
   items: User[];
@@ -17,10 +18,11 @@ const WithStaticProps: React.SFC<Props> = ({ items }) => (
     </p>
     <p>You are currently on: /users</p>
     <List items={items} />
-    <p>
+    <p className="mb-5">
       <Link href="/">
         <a>Go home</a>
       </Link>
+      <Tag use={TagUse.negative}>LABEL</Tag>
     </p>
   </Layout>
 );

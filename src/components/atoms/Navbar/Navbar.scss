@@ -1,0 +1,42 @@
+.ug-navbar {
+  .subscribe-btn {
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height: 0.5rem;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background 100ms ease-out;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &--primary {
+      background-color: var(--black);
+      border: 2px solid var(--black);
+      color: var(--white);
+
+      &:hover {
+        background-color: var(--white);
+        border: 2px solid var(--black);
+        color: var(--black);
+      }
+    }
+
+    &--xs {
+      font-size: 0.875rem;
+      height: 2.5rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

@@ -16,17 +16,27 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
+      "@config/*": ["src/config/*"],
+      "@constants/*": ["src/constants/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@environments/*": ["environments/*"],
       "@components/*": ["src/components/*"],
+      "@primitives/*": ["src/components/primitives/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@hooks/*": ["src/hooks/*"],
       "@interfaces/*": ["src/interfaces/*"],
       "@pages/*": ["src/pages/*"],
       "@theme/*": ["src/theme/*"],
-      "@utils/*": ["src/utils/*"]
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@validators/*": ["src/validators/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext"
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "**/*.js"],
   "include": ["**/*.ts", "**/*.tsx"]
 }
