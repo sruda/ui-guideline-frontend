@@ -31,12 +31,6 @@ module.exports = {
     });
     newConfig.resolve.extensions.push('.ts', '.tsx');
 
-    // Then we tell webpack what to do with CSS modules
-    newConfig.module.rules.push({
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader'],
-    });
-
     newConfig.module.rules.push({
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],

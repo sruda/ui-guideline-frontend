@@ -1,5 +1,7 @@
 import { addDecorator, addParameters } from '@storybook/react';
 
+import './scss-loader.scss';
+
 // Add 'ug' class prefix in Storybook body
 addDecorator(story => {
   document.body.classList.add('ug-root');
