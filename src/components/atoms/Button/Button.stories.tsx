@@ -1,4 +1,4 @@
-import 'theme/base/index.scss';
+// import 'src/theme/base/index.scss';
 
 import { boolean, optionsKnob as options, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';

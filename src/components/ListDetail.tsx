@@ -1,4 +1,4 @@
-import { User } from '@interfaces/index';
+import { User } from '@interfaces/user';
 import * as React from 'react';
 
 type ListDetailProps = {

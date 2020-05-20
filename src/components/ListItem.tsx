@@ -1,4 +1,4 @@
-import { User } from '@interfaces/index';
+import { User } from '@interfaces/user';
 import Link from 'next/link';
 import * as React from 'react';
 
