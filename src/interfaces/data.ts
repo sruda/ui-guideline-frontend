@@ -1,5 +1,5 @@
 // TODO: Mover este Types a un interface más global, ya que aqui esta atado al componente.
-import { Types as FaceRatingTypes } from 'app/components/atoms/Ratings/FaceRating/FaceRating';
+import { Types as FaceRatingTypes } from '@atoms/Ratings/FaceRating/FaceRating';
 
 // TODO: Investigar más ya que Evergreen dice ser un Design System y a la vez un UI Framework
 export enum TypeOfSystem {

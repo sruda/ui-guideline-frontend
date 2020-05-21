@@ -24,7 +24,7 @@ export default create({
 
   // Toolbar default and active colors
   barTextColor: '#33475B',
-  barSelectedColor: '#008262',
+  barSelectedColor: '#3EA279',
   barBg: '#FFFFFF',
 
   // Form colors
@@ -35,5 +35,5 @@ export default create({
 
   // Brand logo/text
   brandImage: logo,
-  brandTitle: 'Mi Águila'
+  brandTitle: 'UI Guideline'
 });

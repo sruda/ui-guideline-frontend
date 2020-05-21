@@ -4,14 +4,14 @@
  * @type constants
  */
 
-/* CURRENT ENVIRONMENT */
-export const ENV = process.env.NODE_ENV;
-
-/* DEBUG */
-export const DEBUG = !!ENV;
-
 /* Base domain */
-export const BASE_DOMAIN = 'https://www.uiguideline.com';
+export const LOCAL_BASE_DOMAIN = 'http://localhost:3000/';
+export const DEV_BASE_DOMAIN = 'https://uiguideline-dev.netlify.app/';
+export const PROD_BASE_DOMAIN = 'https://www.uiguideline.com';
+
+/* Auth */
+export const LOCAL_COOKIE_DOMAIN = 'localhost';
+export const PRD_COOKIE_DOMAIN = 'www.uiguideline.com';
 
 /* Environments */
 export const LOCAL = 'local';
@@ -19,7 +19,9 @@ export const DEV = 'development';
 export const PRD = 'production';
 
 /* Server Urls */
-export const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+export const LOCAL_SERVER_URL = 'http://localhost:5000/graphql';
+export const DEV_SERVER_URL = 'http://localhost:5000/graphql';
+export const PRD_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 /* Firebase Config */
 export const FIREBASE_CONFIG = {

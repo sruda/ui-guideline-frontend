@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 
-import environments from '@environments/environments';
+import { isLocal } from '@config/config';
 
 import { db } from '@config/firebase/firebaseConfig';
 
@@ -50,10 +50,10 @@ const create = async (data: RefSystemData): Promise<CreateResponse> => {
     });
 
     if (response.id) return { status: StatusResponse.ok, data: { refSystemId: response.id } };
-    environments.debugMode && console.log('Error try: ', response);
+    isLocal() && console.log('Error try: ', response);
     return { status: StatusResponse.error };
   } catch (error) {
-    environments.debugMode && console.log('Error catch: ', error);
+    isLocal() && console.log('Error catch: ', error);
     return { status: StatusResponse.error };
   }
 };

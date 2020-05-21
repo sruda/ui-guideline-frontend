@@ -19,7 +19,6 @@
       "@config/*": ["src/config/*"],
       "@constants/*": ["src/constants/*"],
       "@contexts/*": ["src/contexts/*"],
-      "@environments/*": ["environments/*"],
       "@components/*": ["src/components/*"],
       "@primitives/*": ["src/components/primitives/*"],
       "@atoms/*": ["src/components/atoms/*"],

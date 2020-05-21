@@ -31,7 +31,6 @@ module.exports = {
                 '@constants': './src/constants',
                 '@config': './src/config',
                 '@contexts': './src/contexts',
-                '@environments': './environments',
                 '@hooks': './src/hooks',
                 '@interfaces': './src/interfaces',
                 '@pages': './src/pages',
@@ -54,7 +53,6 @@ module.exports = {
     newConfig.resolve.alias['@constants'] = path.resolve(dir, './src/constants');
     newConfig.resolve.alias['@config'] = path.resolve(dir, './src/config');
     newConfig.resolve.alias['@contexts'] = path.resolve(dir, './src/contexts');
-    newConfig.resolve.alias['@environments'] = path.resolve(dir, './environments');
     newConfig.resolve.alias['@hooks'] = path.resolve(dir, './src/hooks');
     newConfig.resolve.alias['@interfaces'] = path.resolve(dir, './src/interfaces');
     newConfig.resolve.alias['@pages'] = path.resolve(dir, './src/pages');
